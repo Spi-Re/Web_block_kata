@@ -1,0 +1,53 @@
+@font-face {
+    font-family: 'TT Lakes';
+    src: url('/fonts/TTLakes-Regular.eot');
+    src: url('/fonts/TTLakes-Regular.eot?#iefix') format('embedded-opentype'),
+    	 url('/fonts/TTLakes-Regular.woff') format('woff'),
+    	 url('/fonts/TTLakes-Regular.ttf') format('truetype');
+    font-weight: 400;
+    font-style: normal;
+    }
+
+@font-face {
+	font-family: 'TT Lakes';
+	src: url('/fonts/TTLakes-Medium.eot');
+	src: url('/fonts/TTLakes-Medium.eot?#iefix') format('embedded-opentype'),
+		 url('/fonts/TTLakes-Medium.woff') format('woff'),
+		 url('/fonts/TTLakes-Medium.ttf') format('truetype');
+	font-weight: 500;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'TT Lakes';
+	src: url('/fonts/TTLakes-Bold.eot');
+	src: url('/fonts/TTLakes-Bold.eot?#iefix') format('embedded-opentype'),
+		 url('/fonts/TTLakes-Bold.woff') format('woff'),
+		 url('/fonts/TTLakes-Bold.ttf') format('truetype');
+	font-weight: 700;
+	font-style: normal;
+}
+
+body {
+	font-family: "TT Lakes", sans-serif;
+	font-weight: 400;
+}
+
+body, li, ul, img, div, a, h1 {
+	margin: 0;
+	padding: 0;
+}
+
+a {
+	text-decoration: none;
+}
+
+html,
+body {
+	height: 100%;
+	width: 100%;
+}
+
+li {
+	list-style: none;
+}
