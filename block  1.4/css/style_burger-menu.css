@@ -181,6 +181,7 @@ a {
 .button {
 	opacity: 1;
 	transition: opacity 0.3s;
+	cursor: pointer;
 }
 
 .button:hover {
