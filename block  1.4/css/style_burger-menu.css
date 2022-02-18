@@ -99,10 +99,6 @@ a {
 	flex: 1 1 auto;
 }
 
-.main-list__block {
-	overflow: auto;
-}
-
 .main-menu__item {
 	margin: 32px 0 0 24px;
 }
