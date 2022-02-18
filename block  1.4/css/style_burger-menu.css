@@ -33,7 +33,7 @@ body {
 	font-weight: 400;
 }
 
-body, li, ul, img, div, a, h1 {
+body, li, ul, img, div, a, h1, button {
 	margin: 0;
 	padding: 0;
 }
@@ -50,4 +50,144 @@ body {
 
 li {
 	list-style: none;
+}
+
+/* ========================================================== */
+
+.wrapper {
+	min-height: 100%;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	max-width: 320px;
+	box-shadow: -130px 0 150px 50px #0E1850;
+}
+
+.header-container {
+	max-width: 320px;
+	margin: 0 auto;
+}
+.header-row {
+	display: flex;
+	justify-content: space-between;
+	margin: 18px 24px;
+}
+
+.button-header{
+	background-color: inherit;
+	border: none;
+	vertical-align: top;
+	cursor: pointer;
+}
+
+.header-column__item--burger {
+	margin: 4px 16px 0 0;
+}
+
+.header-column__item--search {
+	margin: 4px 0 0 0;
+}
+
+/* =================================== */
+
+a {
+	color: #1B1C21;
+	font-weight: 500;
+}
+
+.main {
+	flex: 1 1 auto;
+}
+
+.main-list__block {
+	overflow: auto;
+}
+
+.main-menu__item {
+	margin: 32px 0 0 24px;
+}
+
+.main-list li:last-child {
+	margin-bottom: 30px;
+}
+
+.main-menu__item.active {
+	position: relative;
+}
+
+.active a{
+	color: #7E7E82;
+}
+
+.active a::before {
+	content: "";
+	position: absolute;
+	width: 4px;
+	height: 32px;
+	background-color: #41F6D7; 
+	top: -4px;
+	left: -24px;
+	border-radius: 0 10px 10px 0; 
+}
+
+/* =========================================================== */
+
+.footer {
+	margin-left: 24px;
+	padding-bottom: 30px;
+	max-width: 320px;
+}
+.footer-container {
+	max-width: 320px;
+	margin: 0 auto;
+}
+
+.footer-column__item {
+	margin-right: 16px;
+	cursor: pointer;
+}
+
+.button-footer {
+	background-color: inherit;
+	border: none;
+}
+
+.footer-row__mail {
+	margin-top: 16px;
+	font-size: 16px;
+	line-height: 24px;
+	letter-spacing: -0.2px;
+	color: #1B1C21;
+	font-weight: 500;
+}
+.footer-row__tel {
+	margin-top: 12px;
+	color: #1B1C21;
+	font-weight: 700;
+}
+
+.footer-row__tel a {
+	font-size: 24px;
+    line-height: 32px;
+	letter-spacing: -0.6px;
+	font-weight: 700;
+}
+
+.footer-column__item--lang {
+	font-weight: 500;
+	margin: 40px 7px 0 0
+}
+
+.active-footer {
+	color: #7E7E82;
+}
+
+.button {
+	opacity: 1;
+	transition: opacity 0.3s;
+}
+
+.button:hover {
+	opacity: 0.5;
+	transition: opacity 0.3s;
 }

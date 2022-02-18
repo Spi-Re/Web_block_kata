@@ -3,10 +3,58 @@
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<link rel="stylesheet" href="css/style_new.css">
-	<title>Блок 1.3</title>
+	<link rel="stylesheet" href="css/style_burger-menu.css">
+	<title>Блок 1.4</title>
 </head>
 <body>
-	Hello git!
+	<div class="wrapper">
+		<header class="header">
+			<div class="header-container">
+				<div class="header-row">
+					<div class="header-column">
+						<button class="header-column__item--burger button-header button"><img src="img/header/burger-close.svg" alt="Закрыть меню"></button>
+						<a href="#"><img class="header-column__item--logo" src="../img/header/logo.svg" alt="Логотип"></a>
+					</div>
+					<div class="header-column">
+						<button class="header-column__item--search button-header button"><img src="img/header/search.svg" alt="Поиск"></button>
+					</div>
+				</div>
+			</div>
+		</header>
+		<main class="main">
+			<div class="main-container">
+				<nav class="main-list__block">
+					<ul class="main-list">
+						<li class="main-menu__item active"><a href="#">Ремонт техники</a></li>
+						<li class="main-menu__item"><a href="#">Услуги и сервисы</a></li>
+						<li class="main-menu__item"><a href="#">Корпоративным клиентам</a></li>
+						<li class="main-menu__item"><a href="#">Продавцам техники</a></li>
+						<li class="main-menu__item"><a href="#">Партнерам</a></li>
+						<li class="main-menu__item"><a href="#">Производителям</a></li>
+						<li class="main-menu__item"><a href="#">Наши сервисные центры</a></li>
+						<li class="main-menu__item"><a href="#">Контакты</a></li>
+					</ul>
+				</nav>
+			</div>
+		</main>
+		<footer class="footer">
+			<div class="footer-container">
+				<div class="footer-row">
+					<div class="footer-row__buttons">
+						<button class="footer-column__item footer-column__item--call button-footer button"><img src="../img/header/call.svg" alt="Позвонить"></button>
+						<button class="footer-column__item footer-column__item--note button-footer button"><img src="../img/header/chat.svg" alt="Написать"></button>
+						<button class="footer-column__item footer-column__item--profile button-footer button"><img src="../img/header/profile.svg" alt="Профиль"></button>
+					</div>
+					<div class="footer-row__mail"><a href="mailto:mail@cps.com">mail@cps.com</a></div>
+					<div class="footer-row__tel"><a href="tel:88008908900">8 800 890 8900</a></div>
+					<div class="footer-row__lang">
+						<button class="footer-column__item--lang footer-column__item--lang--ru button-footer active-footer button">RU</button>
+						<button class="footer-column__item--lang footer-column__item--lang--en button-footer button">EN</button>
+						<button class="footer-column__item--lang footer-column__item--lang--ch button-footer button">CH</button>
+					</div>
+				</div>
+			</div>
+		</footer>
+	</div>
 </body>
 </html>
