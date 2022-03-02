@@ -25,9 +25,9 @@ const windowInnerWidth = window.innerWidth;
 
 
 
-if (windowInnerWidth <= 498) {
+function initSlider() {
 	new Swiper('.swiper', {
-		freeMode: true,
+		// freeMode: true,
 		slidesPerView: "auto",
 		loop: true,
 		spaceBetween: 20,
@@ -37,4 +37,18 @@ if (windowInnerWidth <= 498) {
 		  type: 'bullets',
 		},
 	  });
-} 
+}
+
+
+function detectDevice() {
+	if(/Android|webOS|iPhone|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) && windowInnerWidth <= 498){
+	  // true for mobile device
+	  initSlider();
+	  
+	}else{
+	  // false for not mobile device
+	  
+	}
+  }
+  
+  detectDevice();
