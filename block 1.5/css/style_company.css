@@ -157,6 +157,12 @@ li {
 	}
 }
 
+@media (max-width: 352px) {
+	.container-slider::after {
+		top: 91px;
+	}
+}
+
 .body-hidden {
 	height: 166px;
 	overflow-y: hidden;
