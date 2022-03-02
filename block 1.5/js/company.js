@@ -1,5 +1,5 @@
 let buttonMore = document.querySelector('.about-company__main-column--text--more')
-let buttonMoreImage = document.querySelector('.more-text-img')
+let buttonMoreImage = document.querySelector('.more-text--arrow')
 let buttonText = document.querySelector('.more-text')
 let blockMoreInfo = document.querySelector('.more-info')
 

@@ -245,7 +245,7 @@ li {
 	line-height: 24px;
 }
 
-.about-company__main-column--text--more .more-text-img {
+.about-company__main-column--text--more .more-text--arrow {
 	content: "";
 	background: url(../../img/main/spoiler.svg) no-repeat;
 	margin: 5px 16px 0 8px;
