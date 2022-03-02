@@ -19,14 +19,77 @@ buttonMore.addEventListener('click', function(evt) {
 	}
 });
 
-let swiperOne = document.querySelector('.swiper-one');
+/* Swiper
+**************************************************************/
+var swiper = Swiper;
+var init = false;
+
+/* Which media query
+**************************************************************/
+function swiperMode() {
+    let mobile = window.matchMedia('(min-width: 0px) and (max-width: 498px)');
+    let tablet = window.matchMedia('(min-width: 499px)');
+
+    // Enable (for mobile)
+    if(mobile.matches) {
+        if (!init) {
+            init = true;
+            swiper = new Swiper('.swiper', {
+				// freeMode: true,
+				slidesPerView: "auto",
+				loop: true,
+				spaceBetween: 20,
+				pagination: {
+				  el: '.swiper-pagination',
+				  clickable: true,
+				  type: 'bullets',
+				},
+				breakpoints: {
+
+                    767: {
+                        slidesPerView: 1,
+                        spaceBetween: 0,
+                        effect: 'coverflow',
+
+                        coverflowEffect: {
+                            rotate: 0,
+                            stretch: 20,
+                            depth: 120,
+                            modifier: 3,
+                            slideShadows: false,
+                        }
+                    }
+			  	},
+			});
+        }
+	}	else if(tablet.matches) {
+        	swiper.destroy();
+        	init = false;
+    	}
+}
+
+/* On Load
+**************************************************************/
+window.addEventListener('load', function() {
+    swiperMode();
+});
+
+/* On Resize
+**************************************************************/
+window.addEventListener('resize', function() {
+    swiperMode();
+});
+
+
+/* let swiperOne = document.querySelector('.swiper-one');
 
 const windowInnerWidth = window.innerWidth;
 
 
-
-function initSlider() {
-	new Swiper('.swiper', {
+document.addEventListener('DOMContentLoaded', () => {
+	const width = window.innerWidth
+	if (width < 498){
+	  const slider = new Swiper('.swiper', {
 		// freeMode: true,
 		slidesPerView: "auto",
 		loop: true,
@@ -37,18 +100,5 @@ function initSlider() {
 		  type: 'bullets',
 		},
 	  });
-}
-
-
-function detectDevice() {
-	if(/Android|webOS|iPhone|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) && windowInnerWidth <= 498){
-	  // true for mobile device
-	  initSlider();
-	  
-	}else{
-	  // false for not mobile device
-	  
 	}
-  }
-  
-  detectDevice();
+  }) */
